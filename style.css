@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -10,13 +12,16 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #1bb295;
+    background: #1240d6e5;
 }
 
 .wrapper{
     width: 430px;
     background: #fff;
     border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 .wrapper h1{
     font-size: 25px;
@@ -75,11 +80,51 @@ body{
     color: #fff;
     font-size: 17px;
     padding: 15px 0;
-    background: #1bb295;
+    background: #0e54d6e8;
     border-radius: 7px;
+}
+.content .reset-btn:active{
+    font-size: 12px;
 }
 footer{
     text-align: center;
     position:relative;
     bottom: 20px;
+}
+.start_game button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 45%;
+}
+.wrapper.activeInfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    /* transform: translate(50%, 10%) scale(1); */
+}
+
+@media only screen and (max-width: 600px){
+    .wrapper{
+        width: 450px;
+        position: relative;
+        right: 15%;
+    }
+    .start_game button{
+        position: relative;
+        left: 100%;
+        font-size:15px;
+        width: 150%;
+        border-radius: 7px;
+
+
+    }
+    
 }
