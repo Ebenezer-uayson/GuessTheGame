@@ -3,7 +3,15 @@ resetBtn = document.querySelector(".reset-btn"),
 hint = document.querySelector(".hint span"),
 wrongLetter = document.querySelector(".wrong-letter span"),
 attempts = document.querySelector(".attempts span"),
-typingInput = document.querySelector(".typing-input");
+typingInput = document.querySelector(".typing-input"),
+start_game = document.querySelector(".start_game"),
+main_box = document.querySelector(".wrapper");
+
+
+
+start_game.onclick = () =>{
+    main_box.classList.add("activeInfo");
+}
 
 let word,maxGuesses,corrects=[] ,incorrects=[];
 function randomWord(){
@@ -21,7 +29,7 @@ function randomWord(){
 
     let html = "";
     for (let i = 0; i < word.length; i++) {
-      html += '<input type="text"  disabled>';
+      html += '<input type="text"  disabled >';
         
     }
     inputs.innerHTML = html;
@@ -32,6 +40,7 @@ randomWord();
 function initGame(e){
     let key = e.target.value;
     if(key.match(/^[A-Za-z]+$/) && !incorrects.includes(` ${key}`) && !corrects.includes(key)){
+        
        
             // If using letter found in the word
         if(word.includes(key)){
