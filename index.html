@@ -12,13 +12,25 @@
 
 
    <!-- start Quiz button -->
-   <div class="start_game"><button>Start Game</button></div>
+   <div class="start_game">
+    <button>Start Game</button>
+</div>
 
 <!-- Main Box-->
     <div class="wrapper">
-        <h1>Guess The Word</h1>
+        <div class="head">
+            <h1>Guess The Word</h1>
+            <div class="timer">
+                <div class="time_left_txt">Time Left: </div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+
+        </div>
+        
         
         <div class="content">
+            <span class="comp"></span>
             <input type="text" class="typing-input" maxlength="1" style="text-transform: lowercase;">
             <div class="inputs"></div>
             <div class="details">
