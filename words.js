@@ -59,4 +59,39 @@ const wordList = [
     word: "newtons",
     hint: "The SI unit of force"
 },
+{
+    word:"box",
+    hint:"A word that rymes with 'fox'"
+},
+{
+   word: "sun",
+   hint:"A heavenly or celestial body"
+}, {
+    word: "css",
+    hint:"A styling language"
+},
+{
+    word: "dialogue",
+    hint: "A conversation between two people"
+},
+{
+    word:"gills",
+    hint:"A feature that aids fish to breathe under water"
+},
+{
+    word:"amphibians",
+    hint:"Organisms that can live under water and on land"
+},
+{
+    word: "diamond",
+    hint: " A valuable ore or mineral"
+},
+{
+    word: "sarponification",
+    hint: "The process by which soap is made"
+},
+{
+    word : "science",
+    hint: "The method of obtaining knowlegde through observation and experimentation"
+}
 ]
